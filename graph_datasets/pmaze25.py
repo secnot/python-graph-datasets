@@ -1,4 +1,7 @@
 # Perfect maze (tree) in a 25x25 grid 
+# Nodes: 97
+# Edges: 96
+
 
 adjList=[
     [5, 1],

@@ -1,5 +1,8 @@
 # Graph data from:
 # http://mathematica.stackexchange.com/questions/28456/building-graph-based-on-the-cities-connection
+# Nodes: 49
+# Edges: 107
+
 
 adjList = [   
     [9, 23, 40, 8],
@@ -52,7 +55,6 @@ adjList = [
     [43, 33, 36, 18, 15],
     [24, 11, 42, 4, 27, 39]]
 
-adjDict = {n: k for n, k in enumerate(adjList)}
 
 
 
@@ -108,4 +110,3 @@ nodeData = [
     ('WV', 38.468, -80.9696),
     ('WY', 42.7475, -107.2085)]
 
-nodeDataDict = {n: k for n, k in enumerate(nodeData)}
