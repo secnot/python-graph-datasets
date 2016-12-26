@@ -3,8 +3,8 @@
 # Edges: 404
 
 
-adjList=
-[   [16, 1],
+adjList = [
+    [16, 1],
     [17, 2, 0],
     [18, 3, 1],
     [2],
@@ -384,8 +384,8 @@ adjList=
 
 
 # x coord, y coord
-nodeData=
-[   (7, 1),
+nodeData = [
+    (7, 1),
     (11, 1),
     (13, 1),
     (14, 1),

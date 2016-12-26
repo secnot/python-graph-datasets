@@ -3,8 +3,8 @@
 # Edges: 1465
 
 
-adjList=
-[   [103, 1],
+adjList = [
+    [103, 1],
     [61, 2, 0],
     [1],
     [20, 4],
@@ -1415,8 +1415,8 @@ adjList=
 
 
 # x coord, y coord
-nodeData=
-[   (2, 1),
+nodeData = [
+    (2, 1),
     (4, 1),
     (6, 1),
     (11, 1),
