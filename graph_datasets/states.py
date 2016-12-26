@@ -57,7 +57,7 @@ adjList = [
 
 
 
-
+# TODO: Set Abbreviation last
 # State Abbreviation, Latitude, Longitude
 nodeData = [   
     ('AL', 32.799, -86.8073),
