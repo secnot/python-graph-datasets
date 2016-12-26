@@ -44,11 +44,17 @@ def valid_path(adjList, path):
 def draw_graph(adjList, coordList, path=None, markersize=4):    
     """
     Draw graph using matplotlib
+
+    Arguments:
+        adjList (list): Graph's adjacency list
+        coordList (list): nodes coordinates
+        path(list): list of nodes that define a valid path
+         in the graph
+        markersize(int): Size for node dots in the plot
     """
     import matplotlib.patches as patches
     from matplotlib.path import Path
     import pylab as pl
-
 
     fig, ax = pl.subplots()
 
@@ -57,7 +63,6 @@ def draw_graph(adjList, coordList, path=None, markersize=4):
         codes = [Path.MOVETO, Path.LINETO]
         path = Path(verts, codes)
         ax.add_patch(patches.PathPatch(path, color=color, lw=lw))
-
 
     # Draw segments
     for id in range(len(adjList)):
