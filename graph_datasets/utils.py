@@ -41,7 +41,7 @@ def valid_path(adjList, path):
     return True
 
 
-def draw_graph(adjList, coordList, path=None):    
+def draw_graph(adjList, coordList, path=None, markersize=4):    
     """
     Draw graph using matplotlib
     """
@@ -67,7 +67,7 @@ def draw_graph(adjList, coordList, path=None):
     # Draw points
     x = [coord[0] for id, coord in enumerate(coordList)]
     y = [coord[1] for id, coord in enumerate(coordList)]
-    pl.plot(x, y, 'go')
+    pl.plot(x, y, 'go', markersize=markersize)
 
     # Draw path
     if path is not None and valid_path(adjList, path):
@@ -81,7 +81,7 @@ def draw_graph(adjList, coordList, path=None):
         # Draw path nodes
         x = [coordList[node][0] for node in path]
         y = [coordList[node][1] for node in path]
-        pl.plot(x, y, 'ro')
+        pl.plot(x, y, 'ro', markersize=markersize)
 
         
     pl.axis('equal')
